@@ -7,14 +7,14 @@
 #include <assert.h>
 
 #define TESTS
-void printText(char** arrayOfptrOnStrings, int linesNumber);
+void printText(char** arrayOfptrOnStrings, const int linesNumber);
 char* readText(FILE* text);
 
 int sizeOfFile(FILE* text);
-int linesNumber(char* str, long long fileSize);
+int linesNumber(char* str, const long long fileSize);
 
-void fillArray(char** arrayOfptrOnStrings, char* str, long long fileSize);
-void sortArray(char** arrayOfptrOnStrings, int nLines);
+void fillArray(char** arrayOfptrOnStrings, char* str, const long long fileSize);
+void sortArray(char** arrayOfptrOnStrings, const int nLines);
 
 void launchProgram();
 
