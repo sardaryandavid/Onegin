@@ -7,14 +7,17 @@
 #include <assert.h>
 
 #define TESTS
+
 void printText(char** arrayOfptrOnStrings, const int linesNumber);
 char* readText(FILE* text);
 
 int sizeOfFile(FILE* text);
-int linesNumber(char* str, const long long fileSize);
+int linesNumber(char* str, const size_t fileSize);
 
-void fillArray(char** arrayOfptrOnStrings, char* str, const long long fileSize);
+void fillArray(char** arrayOfptrOnStrings, char* str, const size_t fileSize);
 void sortArray(char** arrayOfptrOnStrings, const int nLines);
+
+int myStrcmp(const void* str1, const void* str2);
 
 void launchProgram();
 
@@ -32,7 +35,7 @@ int main()
 void launchProgram() {
     FILE* text = fopen("text.txt" , "r");
 
-    long long fileSize = sizeOfFile(text);
+    size_t fileSize = sizeOfFile(text);
 
     char* str = readText(text);
 
@@ -44,7 +47,8 @@ void launchProgram() {
 
     printText(arrayOfptrOnStrings, nLines);
 
-    sortArray(arrayOfptrOnStrings, nLines);
+    //sortArray(arrayOfptrOnStrings, nLines);
+    qsort(arrayOfptrOnStrings, fileSize, sizeof(char*), myStrcmp);
 
     printf("\n\n\n");
     printText(arrayOfptrOnStrings, nLines);
@@ -65,8 +69,7 @@ char* readText(FILE* text) {
         exit(0);
     }
 
-    // file size
-    long long fileSize = sizeOfFile(text);
+    size_t fileSize = sizeOfFile(text);
 
     char* str = (char*) calloc(fileSize, sizeof(char));
 
@@ -88,7 +91,7 @@ int sizeOfFile(FILE* text) {
     return fileSize;
 }
 
-int linesNumber(char* str, long long fileSize) {
+int linesNumber(char* str, size_t fileSize) {
     int linesNumber = 0;
     for(int i = 0; i < fileSize; ++i) {
         if(str[i] == '\n') {
@@ -99,7 +102,7 @@ int linesNumber(char* str, long long fileSize) {
     return linesNumber;
 }
 
-void fillArray(char** arrayOfptrOnStrings, char* str, long long fileSize) {
+void fillArray(char** arrayOfptrOnStrings, char* str, size_t fileSize) {
     arrayOfptrOnStrings[0] = str;
 
     int currentLine = 1;
@@ -127,4 +130,9 @@ void sortArray(char** arrayOfptrOnStrings, int nLines) {
                 }
             }
         }
+}
+
+int myStrcmp(const void* str1, const void* str2) {
+    strcmp((char*)str1, (char*)str2);
+    return 1;
 }
