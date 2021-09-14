@@ -8,15 +8,20 @@
 
 #define TESTS
 
-void printText(char** const arrayOfptrOnStrings, const size_t linesNumber);
-char* readText(FILE* text, char* str, const size_t fileSize);
+const int MAXNAMEOFFILE = 15;
 
-int sizeOfFile(FILE* text);
-int linesNumber(const char* const str, const size_t fileSize);
+void scanfFileName(char* str);
+void scanfSortFileName(char* resultSortedFileName);
+void printTextFromFile(const char* const* const arrayOfptrOnStrings, const size_t linesNumber, FILE* resultSortedFile);
+char* readTextFromFile(FILE* text, char* str, const size_t fileSize);
 
-void fillArray(char** arrayOfptrOnStrings, char* str, const size_t fileSize);
+size_t sizeOfFile(FILE* text);
+int symbolAmount(const char* const str, const size_t fileSize, const char symbol);
 
-int myStrcmp(const void* str1, const void* str2);
+void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t fileSize);
+
+int myStrcmpForQsort(const void* str1, const void* str2);
+int myStrcmp(const char* firstString, const char* secondString);
 
 void launchProgram();
 
@@ -32,72 +37,81 @@ int main()
 }
 
 void launchProgram() {
-    FILE* text = fopen("text.txt" , "r");
+    char* fileName = (char*) calloc(MAXNAMEOFFILE, sizeof(*fileName));
+    scanfFileName(fileName);
+
+    FILE* text = fopen(fileName, "r");
+
+    char* resultSortedFileName = (char*) calloc(MAXNAMEOFFILE, sizeof(*fileName));
+    scanfSortFileName(resultSortedFileName);
+
+    FILE* resultSortedFile = fopen(resultSortedFileName, "w");
 
     size_t fileSize = sizeOfFile(text);
     char* str = (char*) calloc(fileSize, sizeof(*str));
-    readText(text, str, fileSize);
+    readTextFromFile(text, str, fileSize);
 
-    size_t nLines = linesNumber(str, fileSize);
+    size_t nLines = symbolAmount(str, fileSize, '\n');
     char** arrayOfptrOnStrings = (char**) calloc (nLines, sizeof(*arrayOfptrOnStrings));
-    fillArray(arrayOfptrOnStrings, str, fileSize);
+    fillArrayOfPtrOnStrings(arrayOfptrOnStrings, str, fileSize);
 
-    printText(arrayOfptrOnStrings, nLines); //!
-    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myStrcmp);
+    printTextFromFile(arrayOfptrOnStrings, nLines, resultSortedFile); //!
+    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myStrcmpForQsort);
     printf("\n\n\n");
-    printText(arrayOfptrOnStrings, nLines);
+    printTextFromFile(arrayOfptrOnStrings, nLines, resultSortedFile);
 
     free(arrayOfptrOnStrings);
     free(str);
+    free(fileName);
     fclose(text);
 }
 
-void printText(char** const arrayOfptrOnStrings, const size_t linesNumber) {
+void printTextFromFile(const char* const* const arrayOfptrOnStrings, const size_t linesNumber, FILE* resultSortedFile) {
+    assert(arrayOfptrOnStrings != nullptr);
+    assert(linesNumber >= 0);
+
+    const char* emptyString = "\n";
     for(int testIndex = 0; testIndex < linesNumber; ++testIndex) {
         if (arrayOfptrOnStrings[testIndex] != nullptr) {
-            printf("%s\n", arrayOfptrOnStrings[testIndex]);
+            fputs(arrayOfptrOnStrings[testIndex], resultSortedFile);
+            fputs(emptyString, resultSortedFile);
         }
     }
+
+    fputs(emptyString, resultSortedFile);
 }
 
-char* readText(FILE* text, char* str, const size_t fileSize) {
-     if(text == NULL) {
-        printf("Error, can`t find the file");
-        exit(0);
-    }
-
-    if (str == NULL) {
-        printf("Error. This text is too big");
-        exit(1);
-    }
+char* readTextFromFile(FILE* text, char* str, const size_t fileSize) {
+    assert(text != nullptr);
+    assert(str != nullptr);
 
     fread(str, sizeof(*str), fileSize, text);
 
     return str;
 }
 
-int sizeOfFile(FILE* text) {
+size_t sizeOfFile(FILE* text) {
     fseek(text, 0 , SEEK_END);
-    long long fileSize = ftell(text);
+    size_t fileSize = ftell(text);
     rewind (text);
 
     return fileSize;
 }
 
-int linesNumber(const char* const str, const size_t fileSize) {
-    int linesNumber = 0;
+int symbolAmount(const char* const str, const size_t fileSize, const char symbol) {
+    int nSymbols = 0;
 
     for(int i = 0; i < fileSize; ++i) {
-        if(str[i] == '\n') {
-            ++linesNumber;
+        if(str[i] == symbol) {
+            ++nSymbols;
         }
     }
 
-    return linesNumber;
+    return nSymbols;
 }
 
 
-void fillArray(char** arrayOfptrOnStrings, char* str, const size_t fileSize) {
+void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t fileSize) {
     arrayOfptrOnStrings[0] = str;
 
     int currentLine = 1;
@@ -114,6 +128,31 @@ void fillArray(char** arrayOfptrOnStrings, char* str, const size_t fileSize) {
 
 }
 
-int myStrcmp(const void* const str1, const void* const str2) {
-    return strcmp(*(char**) str1, *(char**) str2);
+int myStrcmpForQsort(const void* const str1, const void* const str2) {
+    //return strcmp(*(char**) str1, *(char**) str2);
+    return myStrcmp(*(char**) str1, *(char**) str2);
+}
+
+void scanfFileName(char* str) {
+    printf("Please, enter file name: \n");
+    scanf("%s", str);
+}
+
+int myStrcmp(const char* firstString, const char* secondString) {
+    int index = 0;
+
+    while(firstString[index] != '\0' && secondString[index] != '\0') {
+         if(firstString[index] != secondString[index]) {
+            return firstString[index] - secondString[index];
+        }
+
+        ++index;
+    }
+
+    return strlen(firstString) - strlen(secondString);
+}
+
+void scanfSortFileName(char* resultSortedFileName) {
+    printf("Please, enter the name ot output file: \n");
+    scanf("%s", resultSortedFileName);
 }
