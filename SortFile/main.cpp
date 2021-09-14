@@ -8,7 +8,7 @@
 
 #define TESTS
 
-void printText(char** arrayOfptrOnStrings, const size_t linesNumber);
+void printText(char** const arrayOfptrOnStrings, const size_t linesNumber);
 char* readText(FILE* text, char* str, const size_t fileSize);
 
 int sizeOfFile(FILE* text);
@@ -52,7 +52,7 @@ void launchProgram() {
     fclose(text);
 }
 
-void printText(char** arrayOfptrOnStrings, const size_t linesNumber) {
+void printText(char** const arrayOfptrOnStrings, const size_t linesNumber) {
     for(int testIndex = 0; testIndex < linesNumber; ++testIndex) {
         if (arrayOfptrOnStrings[testIndex] != nullptr) {
             printf("%s\n", arrayOfptrOnStrings[testIndex]);
