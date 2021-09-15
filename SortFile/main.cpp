@@ -119,9 +119,7 @@ void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t
     for(int j = 0; j < fileSize; ++j) {
         if(str[j] == '\n') {
             str[j] = '\0';
-            if(str + j + 1 != nullptr) {
-                arrayOfptrOnStrings[currentLine] = str + j + 1;
-            }
+            arrayOfptrOnStrings[currentLine] = str + j + 1;
             ++currentLine;
         }
     }
@@ -129,7 +127,6 @@ void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t
 }
 
 int myStrcmpForQsort(const void* const str1, const void* const str2) {
-    //return strcmp(*(char**) str1, *(char**) str2);
     return myStrcmp(*(char**) str1, *(char**) str2);
 }
 
