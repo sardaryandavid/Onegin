@@ -50,7 +50,7 @@ void launchProgram() {
     char** arrayOfptrOnStrings = (char**) calloc (nLines, sizeof(*arrayOfptrOnStrings));
     fillArrayOfPtrOnStrings(arrayOfptrOnStrings, str, fileSize);
 
-    printTextFromFile(arrayOfptrOnStrings, nLines, resultSortedFile); 
+    printTextFromFile(arrayOfptrOnStrings, nLines, resultSortedFile);
     qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myStrcmpForQsort);
     printf("\n\n\n");
     printTextFromFile(arrayOfptrOnStrings, nLines, resultSortedFile);
