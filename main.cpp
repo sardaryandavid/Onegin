@@ -8,8 +8,8 @@
 
 #define TESTS
 
-void scanfFileName(char* str);
-void scanfSortFileName(char* resultSortedFileName);
+void scanInputName(char* str);
+void scanOutputName(char* resultSortedFileName);
 void printTextFromFile(const char* const* const arrayOfptrOnStrings, const size_t linesNumber, FILE* resultSortedFile);
 char* readTextFromFile(FILE* text, char* str, const size_t fileSize);
 
@@ -33,12 +33,12 @@ int main()
 
 void launchProgram() {
     char* fileName = (char*) calloc(FILENAME_MAX, sizeof(*fileName));
-    scanfFileName(fileName);
+    scanInputName(fileName);
 
     FILE* text = fopen(fileName, "r");
 
     char* resultSortedFileName = (char*) calloc(FILENAME_MAX, sizeof(*fileName));
-    scanfSortFileName(resultSortedFileName);
+    scanOutputName(resultSortedFileName);
 
     FILE* resultSortedFile = fopen(resultSortedFileName, "w");
 
@@ -86,6 +86,8 @@ char* readTextFromFile(FILE* text, char* str, const size_t fileSize) {
 }
 
 size_t sizeOfFile(FILE* text) {
+    assert(text != nullptr);
+
     fseek(text, 0 , SEEK_END);
     size_t fileSize = ftell(text);
     rewind (text);
@@ -93,40 +95,12 @@ size_t sizeOfFile(FILE* text) {
     return fileSize;
 }
 
-int symbolAmount(const char* const str, const size_t fileSize, const char symbol) {
-    int nSymbols = 0;
-
-    for(int i = 0; i < fileSize; ++i) {
-        if(str[i] == symbol) {
-            ++nSymbols;
-        }
-    }
-
-    return nSymbols;
-}
-
-
-void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t fileSize) {
-    arrayOfptrOnStrings[0] = str;
-
-    int currentLine = 1;
-
-    for(int j = 0; j < fileSize; ++j) {
-        if(str[j] == '\n') {
-            str[j] = '\0';
-            arrayOfptrOnStrings[currentLine] = str + j + 1;
-            ++currentLine;
-        }
-    }
-
-}
-
-void scanfFileName(char* str) {
-    printf("Please, enter file name: \n");
+void scanInputName(char* str) {
+    printf("Please, enter input file name: \n");
     scanf("%s", str);
 }
 
-void scanfSortFileName(char* resultSortedFileName) {
-    printf("Please, enter the name ot output file: \n");
+void scanOutputName(char* resultSortedFileName) {
+    printf("Please, enter the name of output file: \n");
     scanf("%s", resultSortedFileName);
 }
