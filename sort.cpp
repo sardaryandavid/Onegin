@@ -1,6 +1,7 @@
 #include "sort.h"
 #include <cstring>
 #include <assert.h>
+#include <stdio.h>
 
 int myStrcmpForQsort(const void* const str1, const void* const str2) {
     assert(str1 != nullptr);
@@ -9,44 +10,73 @@ int myStrcmpForQsort(const void* const str1, const void* const str2) {
     return myStrcmp(*(char**) str1, *(char**) str2);
 }
 
+int myReverseStrcmpForQsort(const void* const str1, const void* const str2) {
+    assert(str1 != nullptr);
+    assert(str2 != nullptr);
+
+    return myReverseStrcmp(*(char**) str1, *(char**) str2);
+}
+
 int myStrcmp(const char* firstString, const char* secondString) {
-    assert(firstString != nullptr);
-    assert(secondString != nullptr);
-
-    int index = 0;
-
-    while(firstString[index] != '\0' && secondString[index] != '\0') {
-         if(firstString[index] != secondString[index]) {
-            return firstString[index] - secondString[index];
+    while(*firstString != '\0' && *secondString != '\0') {
+        while(!isGoodSymbol(*firstString)) {
+            firstString++;
         }
 
-        ++index;
+        while(!isGoodSymbol(*secondString)) {
+            secondString++;
+        }
+
+        if(*firstString != *secondString) {
+            return *firstString - *secondString;
+        }
+
+        ++firstString;
+        ++secondString;
     }
 
     return strlen(firstString) - strlen(secondString);
 }
 
-int myReverseStrcmp(const char* firstString, const char* secondString) {
-    int index = 0;
+int myReverseStrcmp(char* firstString, char* secondString)
+{
 
-    while(firstString[index++] != '\0' && secondString[index++] != '0') {
-        /* empty body */
-    }
+    int sizeOfFirstString = strlen(firstString);
+    int sizeOfSecondString = strlen(secondString);
 
-    for( ; index >= 0; --index) {
-         if(firstString[index] != secondString[index]) {
-            return firstString[index] - secondString[index];
+    char* str1 = firstString + sizeOfFirstString;
+    char* str2 = secondString + sizeOfSecondString;
+
+    while(str1 != firstString && str2 != secondString) {
+
+        while(!isGoodSymbol(*firstString) && ((str1 - 1) - firstString) >= 0) {
+            --str1;
         }
+
+        while(!isGoodSymbol(*secondString) && ((str2 - 1) - secondString) >= 0) {
+            --str2;
+        }
+
+        if(*str1 != *str2) {
+            return *str1 - *str2;
+        }
+
+        --str1;
+        --str2;
     }
+
+
+    return sizeOfFirstString - sizeOfSecondString;
 }
 
-int symbolAmount(const char* const str, const size_t fileSize, const char symbol) {
+
+int symbolAmount(char* str, const size_t fileSize, const char symbol) {
     assert(str != nullptr);
 
     int nSymbols = 0;
 
-    for(int i = 0; i < fileSize; ++i) {
-        if(str[i] == symbol) {
+    for(size_t i = 0; i < fileSize; ++i) {
+        if(*str++ == symbol) {
             ++nSymbols;
         }
     }
@@ -59,7 +89,7 @@ void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t
 
     int currentLine = 1;
 
-    for(int j = 0; j < fileSize; ++j) {
+    for(size_t j = 0; j < fileSize; ++j) {
         if(str[j] == '\n') {
             str[j] = '\0';
             arrayOfptrOnStrings[currentLine] = str + j + 1;
@@ -67,4 +97,8 @@ void fillArrayOfPtrOnStrings(char** arrayOfptrOnStrings, char* str, const size_t
         }
     }
 
+}
+
+int isGoodSymbol(char symbol) {
+    return (('A' <= symbol && symbol  <= 'Z') || ('a' <= symbol && symbol <= 'z'));
 }
