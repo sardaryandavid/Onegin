@@ -1,14 +1,77 @@
 #include "functionsForFile.h"
+#include "sort.h"
+#include <string.h>
 #include <assert.h>
+
+enum correct {NO = 0, YES = 1};
 
 void scanInputName(char* str) {
     printf("Please, enter input file name: \n");
     scanf("%s", str);
+
+    if (!correctFileName(str)) {
+        printf("File name is not correct.\n");
+        scanInputName(str);
+    }
 }
 
 void scanOutputName(char* resultSortedFileName) {
     printf("Please, enter the name of output file: \n");
     scanf("%s", resultSortedFileName);
+
+    if (!correctFileName(resultSortedFileName)) {
+        printf("File name is not correct.\n");
+        scanOutputName(resultSortedFileName);
+    }
+}
+
+int correctFileName(char* fileName) {
+    assert(fileName != nullptr);
+
+    size_t sizeOfFileName = strlen(fileName);
+
+    if (sizeOfFileName <= 4) {
+        return NO;
+    }
+
+    int step = 0;
+
+    for(size_t index = sizeOfFileName - 1; index >= sizeOfFileName - 4; --index) { // [.][t][x][t][] - sizeOfFileName - 4
+        switch(step) {
+            case 0:
+                if(*(fileName + index) != 't') {
+                    printf("MISTAKE1\n");
+                    return NO;
+                }
+                break;
+
+            case 1:
+                if(*(fileName + index) != 'x') {
+                    printf("%c\n", *(fileName + index));
+                    printf("MISTAKE2\n");
+                    return NO;
+                }
+                break;
+
+            case 2:
+                if(*(fileName + index) != 't') {
+                    printf("MISTAKE3\n");
+                    return NO;
+                }
+                break;
+
+            case 3:
+                if(*(fileName + index) != '.') {
+                    printf("MISTAKE4\n");
+                    return NO;
+                }
+                break;
+        }
+
+        ++step;
+    }
+
+    return YES;
 }
 
 void printTextToFile(const char* const* const arrayOfptrOnStrings, const size_t linesNumber, FILE* resultSortedFile) {
@@ -17,8 +80,9 @@ void printTextToFile(const char* const* const arrayOfptrOnStrings, const size_t 
 
     const char* emptyString = "\n";
     for(size_t Index = 0; Index < linesNumber; ++Index) {
-        if (*(arrayOfptrOnStrings + Index) != nullptr) {
-            printf("%s\n", *(arrayOfptrOnStrings + Index));
+        if (*(arrayOfptrOnStrings + Index) != nullptr && strIsGood(*(arrayOfptrOnStrings + Index)) &&
+            strlen(*(arrayOfptrOnStrings + Index)) != 0) {
+            printf("<%s>\n", *(arrayOfptrOnStrings + Index));
             fputs(*(arrayOfptrOnStrings + Index), resultSortedFile);
             fputs(emptyString, resultSortedFile);
         }
@@ -41,7 +105,21 @@ size_t sizeOfFile(FILE* text) {
 
     fseek(text, 0 , SEEK_END);
     size_t fileSize = ftell(text);
-    rewind (text);
+    rewind(text);
 
     return fileSize;
+}
+
+int strIsGood(const char* str) { //is str is garbage
+    int index = 0;
+
+    while(!isGoodSymbol(*(str + index++)) && *(str + index) != '\0') {
+        // empty body
+    }
+
+    if (*(str + index) == '\0') {
+        return 0;
+    }
+
+    return 1;
 }

@@ -11,16 +11,9 @@
 
 void launchProgram();
 
-struct myString {
-    char* str = nullptr;
-    int lengthOfStr = 0;
-};
-
-
-struct textFile {
-    FILE* text = nullptr;
-    size_t fileSize = 0;
-    size_t nLines = 0;
+struct myFile {
+    char* fileName;
+    size_t fileSize;
 };
 
 int main()
@@ -52,9 +45,12 @@ void launchProgram() {
     char** arrayOfptrOnStrings = (char**) calloc (nLines, sizeof(*arrayOfptrOnStrings));
     fillArrayOfPtrOnStrings(arrayOfptrOnStrings, str, fileSize);
 
+    struct myString arrayOfPtrOnMyStr[nLines];
+    fillArrayOfPtrOnMyStr(arrayOfPtrOnMyStr, arrayOfptrOnStrings, nLines);
+
     printTextToFile(arrayOfptrOnStrings, nLines, resultSortedFile);
-    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myReverseStrcmpForQsort);
-    printf("\n");
+    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myStrcmpForQsort);
+    printf("<\n\n\n\n\n\n\n\n\n\n\n\n\n>");
     printTextToFile(arrayOfptrOnStrings, nLines, resultSortedFile);
 
     free(arrayOfptrOnStrings);
