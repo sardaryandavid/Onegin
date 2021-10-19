@@ -2,6 +2,7 @@
 #include <cstring>
 #include <assert.h>
 #include <stdio.h>
+#include <ctype.h>
 
 const int DIFF = 'a' - 'A';
 
@@ -29,8 +30,8 @@ int myStrcmp(const char* firstString, const char* secondString) {
             secondString++;
         }
 
-        if (*firstString != *secondString) {   // TODO
-            return *firstString - *secondString;
+        if (tolower(*firstString) != tolower(*secondString)) {   // TODO
+            return tolower(*firstString) - tolower(*secondString);
         }
 
         ++firstString;
@@ -50,16 +51,16 @@ int myReverseStrcmp(char* firstString, char* secondString)
     char* str2 = secondString + lenOfSecondString - 1;
 
     while(str1 != firstString && str2 != secondString) {
-        while(!isGoodSymbol(*str1) && str1 > firstString) {
+        while(!isGoodSymbol(*str1) && *str1 != ' ' && str1 > firstString) {
             --str1;
         }
 
-        while(!isGoodSymbol(*str2) && str2 > secondString) {
+        while(!isGoodSymbol(*str2) && *str2 != ' ' &&str2 > secondString) {
             --str2;
         }
 
-        if (*str1 != *str2) {
-            return *str1 - *str2;
+        if (tolower(*str1) != tolower(*str2)) {
+            return tolower(*str1) - tolower(*str2);
         }
 
         --str1;

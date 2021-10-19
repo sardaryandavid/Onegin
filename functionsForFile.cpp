@@ -37,34 +37,39 @@ int correctFileName(char* fileName) {
     int step = 0;
 
     for(size_t index = sizeOfFileName - 1; index >= sizeOfFileName - 4; --index) { // [.][t][x][t][] - sizeOfFileName - 4
+        // strcmp для .txt и строки
         switch(step) {
             case 0:
-                if(*(fileName + index) != 't') {
+                if (*(fileName + index) != 't') {
                     printf("MISTAKE1\n");
                     return NO;
                 }
+
                 break;
 
             case 1:
-                if(*(fileName + index) != 'x') {
+                if (*(fileName + index) != 'x') {
                     printf("%c\n", *(fileName + index));
                     printf("MISTAKE2\n");
                     return NO;
                 }
+
                 break;
 
             case 2:
-                if(*(fileName + index) != 't') {
+                if (*(fileName + index) != 't') {
                     printf("MISTAKE3\n");
                     return NO;
                 }
+
                 break;
 
             case 3:
-                if(*(fileName + index) != '.') {
+                if (*(fileName + index) != '.') {
                     printf("MISTAKE4\n");
                     return NO;
                 }
+
                 break;
         }
 
@@ -113,8 +118,8 @@ size_t sizeOfFile(FILE* text) {
 int strIsGood(const char* str) { //is str is garbage
     int index = 0;
 
-    while(!isGoodSymbol(*(str + index++)) && *(str + index) != '\0') {
-        // empty body
+    while(!isGoodSymbol(*(str + index)) && *(str + index) != '\0' || isRomanNumber(*(str + index))) {
+        ++index;
     }
 
     if (*(str + index) == '\0') {
@@ -122,4 +127,14 @@ int strIsGood(const char* str) { //is str is garbage
     }
 
     return 1;
+}
+
+int isRomanNumber(char symbol) {
+    if(symbol == 'X' || symbol == 'L' || symbol == 'I' || symbol == 'M' || symbol == 'V') {
+        return YES;
+    }
+
+    else {
+        return NO;
+    }
 }

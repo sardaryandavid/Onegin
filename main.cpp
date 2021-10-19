@@ -49,7 +49,7 @@ void launchProgram() {
     fillArrayOfPtrOnMyStr(arrayOfPtrOnMyStr, arrayOfptrOnStrings, nLines);
 
     printTextToFile(arrayOfptrOnStrings, nLines, resultSortedFile);
-    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myStrcmpForQsort);
+    qsort(arrayOfptrOnStrings, nLines, sizeof(*arrayOfptrOnStrings), myReverseStrcmpForQsort);
     printf("<\n\n\n\n\n\n\n\n\n\n\n\n\n>");
     printTextToFile(arrayOfptrOnStrings, nLines, resultSortedFile);
 
