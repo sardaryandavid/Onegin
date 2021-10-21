@@ -10,7 +10,7 @@ int myStrcmpForQsort(const void* const str1, const void* const str2) {
     assert(str1 != nullptr);
     assert(str2 != nullptr);
 
-    return myStrcmp(*(char**) str1, *(char**) str2);
+   return myStrcmp(*(char**) str1, *(char**) str2);
 }
 
 int myReverseStrcmpForQsort(const void* const str1, const void* const str2) {
@@ -30,7 +30,7 @@ int myStrcmp(const char* firstString, const char* secondString) {
             secondString++;
         }
 
-        if (tolower(*firstString) != tolower(*secondString)) {   // TODO
+        if (tolower(*firstString) != tolower(*secondString)) {
             return tolower(*firstString) - tolower(*secondString);
         }
 
