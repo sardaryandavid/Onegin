@@ -1,0 +1,559 @@
+   Translation by Charles H. Johnston.
+     Penguin Books Ltd, Hannondsworth, Middlesex, England
+     Penguin Books, 625 Madison Avenue, New York, New York 10022, U.S.A.
+     Penguin Books Australia Ltd, Ringwood, Victoria, Australia
+     Penguin  Books Canada Ltd, 2801  John Street, Markham,  Ontario, Canada
+L3R IB4
+     Penguin Books (N.Z.) Ltd, 182-190 Wairau Road, Auckland 10, New Zealand
+     This translation first published 1977
+     Published with minor  revisions and an Introduction in Penguin Classics
+     Copyright  Charles Johnston, 1977, 1979
+     Introduction copyright  John Bayley, 1979
+     All rights reserved
+     Made  and  printed  in Great  Britain  by  Hazell Watson &  Viney  Ltd,
+Aylesbury, Bucks
+     Set in Intertype Lectura
+     Except in  the United  States of America, this book is sold  subject to
+the condition that it  shall not,  by way of trade or  otherwise,  be  lent,
+re-sold,  hired out, or  otherwise circulated without the  publisher's prior
+consent in any form  of  binding  or  cover other than that  in which it  is
+published and without a  similar condition including  this  condition  being
+imposed on the subsequent purchaser
+Contents
+     Introduction by John Bayley 9
+     Translator's Note 29
+     Eugene Onegin 35
+     Notes1 234
+     1 Notes are at end of each chapter.
+Translator's note
+qwe1231
+13r13r1qw
+     Few foreign masterpieces can have suffered more than Eugene Onegin from
+the English  translator's failure to convey anything more than -- at best --
+the literal meaning.  It is  as if  a  sound-proof wall separated  Pushkin's
+poetic novel from the English-reading world.  There  is  a whole magic which
+goes by default: the  touching lyrical  beauty, the cynical wit of the poem;
+the  psychological  insight,  the  devious  narrative  skill, the thrilling,
+compulsive  grip of the novel; the tremendous gusto and swing and panache of
+the whole performance.
+     Vladimir Nabokov's rendering into unrhymed iambics reproduces the exact
+meaning, but explicitly disclaims any further ambition. While Nabokov admits
+that  in  losing  its  rhyme   the  work  loses  its  ``bloom''  he  argues,
+irrefutably,  that  no rhyming  version  can  be literally  accurate. It can
+however certainly strive  for something else. It can attempt to produce some
+substitute for  the ``bloom'' of  the original, without  which the  work  is
+completely  dead.  It  can try to convey the poet's tone  of voice,  whether
+world-weary  or romantic, the sparkle  of  his jokes,  the  flavour  of  his
+epigrams, the snap of his  final couplets. None of these effects can  emerge
+from  a  purely  literal  unrhymed  translation.  In  fact,  to  offset  the
+  Translation by Charles H. Johnston.
+     Penguin Books Ltd, Hannondsworth, Middlesex, England
+     Penguin Books, 625 Madison Avenue, New York, New York 10022, U.S.A.
+     Penguin Books Australia Ltd, Ringwood, Victoria, Australia
+     Penguin  Books Canada Ltd, 2801  John Street, Markham,  Ontario, Canada
+L3R IB4
+     Penguin Books (N.Z.) Ltd, 182-190 Wairau Road, Auckland 10, New Zealand
+     This translation first published 1977
+     Published with minor  revisions and an Introduction in Penguin Classics
+     Copyright © Charles Johnston, 1977, 1979
+     Introduction copyright © John Bayley, 1979
+     All rights reserved
+     Made  and  printed  in Great  Britain  by  Hazell Watson &  Viney  Ltd,
+Aylesbury, Bucks
+     Set in Intertype Lectura
+     Except in  the United  States of America, this book is sold  subject to
+the condition that it  shall not,  by way of trade or  otherwise,  be  lent,
+re-sold,  hired out, or  otherwise circulated without the  publisher's prior
+consent in any form  of  binding  or  cover other than that  in which it  is
+published and without a  similar condition including  this  condition  being
+imposed on the subsequent purchaser
+Contents
+     Introduction by John Bayley 9
+     Translator's Note 29
+     Eugene Onegin 35
+     Notes1 234
+     1 Notes are at end of each chapter.
+Translator's note
+     Few foreign masterpieces can have suffered more than Eugene Onegin from
+the English  translator's failure to convey anything more than -- at best --
+the literal meaning.  It is  as if  a  sound-proof wall separated  Pushkin's
+poetic novel from the English-reading world.  There  is  a whole magic which
+goes by default: the  touching lyrical  beauty, the cynical wit of the poem;
+the  psychological  insight,  the  devious  narrative  skill, the thrilling,
+compulsive  grip of the novel; the tremendous gusto and swing and panache of
+the whole performance.
+     Vladimir Nabokov's rendering into unrhymed iambics reproduces the exact
+meaning, but explicitly disclaims any further ambition. While Nabokov admits
+that  in  losing  its  rhyme   the  work  loses  its  ``bloom''  he  argues,
+irrefutably,  that  no rhyming  version  can  be literally  accurate. It can
+however certainly strive  for something else. It can attempt to produce some
+substitute for  the ``bloom'' of  the original, without  which the  work  is
+completely  dead.  It  can try to convey the poet's tone  of voice,  whether
+world-weary  or romantic, the sparkle  of  his jokes,  the  flavour  of  his
+epigrams, the snap of his  final couplets. None of these effects can  emerge
+from  a  purely  literal  unrhymed  translation.  In  fact,  to  offset  the
+inevitable  loss in verbal  exactness,  a  rhyming  version  can  aim  at  a
+different sort of accuracy, an equivalence or parallelism conveying, however
+faintly, the impact of the original.
+     Apart from the overall  difficulty of  his  task, the  translator  with
+ambitions of this  type will find  that Pushkin's work presents him with two
+particular problems.
+     The brio of the Russian text partly depends on a lavish use not only of
+French and other foreign words, but of  slang and of  audacious Byronic-type
+rhymes.  If  the  translator produces nothing comparable, he is emasculating
+his original. If he attempts to follow suit, he must  do all he can to avoid
+the pitfalls of the embarrassing, the facetious and the arch. {29}
+     Secondly, he must be on his guard against the ludicrous effect that the
+feminine  ending (for instance the pleasure/measure rhyme, which is so  much
+derided by Nabokov) can all too easily produce in English. He must not sing,
+like Prince Gremin in one English version of Chaykovsky's opera:
+        ``I wouldn't be remotely human
+        Did I not love the Little Woman.''
+     (The libretto of the opera, which was  written and first performed more
+than  forty  years  after  Pushkin's  death,  is by  Chaykovsky  himself and
+Konstantin Shilovsky, a minor  poet of the time.  It  is  nominally based on
+Pushkin's text, but in fact the relationship is not very close.)
+     Anyway, it should  be possible now, with  the help of Nabokov's literal
+translation and commentary, to produce a reasonably accurate rhyming version
+of  Pushkin's  work  which   can  at  least  be   read  with   pleasure  and
+entertainment, and which,  ideally,  might even be able to stand on  its own
+feet as English. That, in all humility, is the aim of the present text.
+     Acknowledgements are  due  to  Messrs. Routledge  and  Kegan  Paul  for
+permission to quote from Vladimir Nabokov's notes in volumes 2 and 3 of  his
+edition of Eugene Onegin (London, 1964. Revised edition, 1976).
+     I  am much  indebted  to  my  friends Sir Sacheverell Sitwell, for  his
+interest  and  support,  and  Sir  John  Balfour,  for  his   searching  and
+constructive criticism of the  translation;  to  Professor  Gleb Struve, for
+generously  giving me the benefit of his unrivalled scholarship and insight;
+above all, to my wife Natasha, for her loving encouragement.
+        C. H. J.
+     Pétri de  vanité,  il  avait encore plus de cette espèce  d'orgueil qui
+fait  avouer avec  la  même  indifférence  les  bonnes  comme  les mauvaises
+actions, suite d'un sentiment de supériorité peut-être imaginaire.
+        (Tiré d'une lettre particulière)
+xxxzzzzz
+zzzzzzzzzzz
+          To Peter Alexandrovich Pletnev
+     Heedless of the proud world's enjoyment,
+     I prize the attention of my friends,
+     and only wish that my employment
+     could have been turned to worthier ends --
+     worthier of you in the perfection
+     your soul displays, in holy dreams,
+     in simple but sublime reflection,
+     in limpid verse that lives and gleams.
+     But, as it is, this pied collection
+     begs your indulgence -- it's been spun
+     from threads both sad and humoristic,
+     themes popular or idealistic,
+     products of carefree hours, of fun,
+     of sleeplessness, faint inspirations,
+     of powers unripe, or on the wane,
+     of reason's icy intimations,
+     and records of a heart in pain.
+Chapter One
+          To live, it hurries, and to feel it hastes.
+           Prince Vyazemsky
+     ``My uncle -- high ideals inspire him;
+     but when past joking he fell sick,
+     he really forced one to admire him --
+     and never played a shrewder trick.
+     Let others learn from his example!
+     But God, how deadly dull to sample
+     sickroom attendance night and day
+     and never stir a foot away!
+     And the sly baseness, fit to throttle,
+     of entertaining the half-dead:
+     one smoothes the pillows down in bed,
+     and glumly serves the medicine bottle,
+     and sighs, and asks oneself all through:
+     "When will the devil come for you?"''
+     Such were a young rake's meditations --
+     by will of Zeus, the high and just,
+     the legatee of his relations --
+     as horses whirled him through the dust.
+     Friends of my Ruslan and Lyudmila,
+     without preliminary feeler
+     let me acquaint you on the nail
+     with this the hero of my tale:
+     Onegin, my good friend, was littered
+     and bred upon the Neva's brink,
+     where you were born as well, I think,
+     reader, or where you've shone and glittered!
+     There once I too strolled back and forth:
+     but I'm allergic to the North...1
+     After a fine career, his father
+     had only debts on which to live.
+     He gave three balls a year, and rather
+     promptly had nothing left to give.
+     Fate saved Evgeny from perdition:
+     at first Madame gave him tuition,
+     from her Monsieur took on the child.
+     He was sweet-natured, and yet wild.
+     Monsieur l'Abbé, the mediocre,
+     reluctant to exhaust the boy,
+     treated his lessons as a ploy.
+     No moralizing from this joker;
+     a mild rebuke was his worst mark,
+     and then a stroll in Letny Park.
+     But when the hour of youthful passion
+     struck for Evgeny, with its play
+     of hope and gloom, romantic-fashion,
+     it was goodbye, Monsieur.
+     Eugene was free, and as a dresser
+     made London's dandy his professor.
+     His hair was fashionably curled,
+     and now at last he saw the World.
+     In French Onegin had perfected
+     proficiency to speak and write,
+     in the mazurka he was light,
+     his bow was wholly unaffected.
+     The World found this enough to treat
+     Eugene as clever, and quite sweet.
+     We all meandered through our schooling
+     haphazard; so, to God be thanks,
+     it's easy, without too much fooling,
+     to pass for cultured in our ranks.
+     Onegin was assessed by many
+     (critical judges, strict as any)
+     as well-read, though of pedant cast.
+     Unforced, as conversation passed,
+     he had the talent of saluting
+     felicitously every theme,
+     of listening like a judge-supreme
+     while serious topics were disputing,
+     or, with an epigram-surprise,
+     of kindling smiles in ladies' eyes.
+     Now Latin's gone quite out of favour;
+     yet, truthfully and not in chaff,
+     Onegin knew enough to savour
+     the meaning of an epigraph,
+     make Juvenal his text, or better
+     add vale when he signed a letter;
+     stumblingly call to mind he did
+     two verses of the Aeneid.
+     He lacked the slightest predilection
+     for raking up historic dust
+     or stirring annalistic must;
+     but groomed an anecdote-collection
+     that stretched from Romulus in his prime
+     across the years to our own time.
+     He was without that dithyrambic
+     frenzy which wrecks our lives for sound,
+     and telling trochee from iambic
+     was quite beyond his wit, we found.
+     He cursed Theocritus and Homer,
+     in Adam Smith was his diploma;
+     our deep economist had got
+     the gift of recognizing what
+     a nation's wealth is, what augments it,
+     and how a country lives, and why
+     it needs no gold if a supply
+     of simple product supplements it.
+     His father failed to understand
+     and took a mortgage on his land.
+     Evgeny's total store of knowledge
+     I have no leisure to recall;
+     where he was master of his college,
+     the art he'd studied best of all,
+     his young heyday's supreme employment,
+     its work, its torture, its enjoyment,
+     what occupied his chafing powers
+     throughout the boredom of the hours --
+     this was the science of that passion
+     which Ovid sang, for which the bard,
+     condemned to a lifetime of hard,
+     ended his wild career of fashion
+     deep in Moldavia the abhorred,
+     far, far from Italy, his adored.
+     How early he'd learnt to dissemble,
+     to hide a hope, to make a show
+     of jealousy, to seem to tremble
+     or pine, persuade of yes or no,
+     and act the humble or imperious,
+     the indifferent, or the deadly serious!
+     In languid silence, or the flame
+     of eloquence, and just the same
+
+
+
+
+
+
+     Penguin  Books Canada Ltd, 2801  John Street, Markham,  Ontario, Canada
+     Penguin  Books Canada Ltd, 2801  John Street, Markham,  Ontario, Canada
+     Penguin Books Australia Ltd, Ringwood, Victoria, Australia
+     Penguin Books Australia Ltd, Ringwood, Victoria, Australia
+     Friends of my Ruslan and Lyudmila,
+     in Adam Smith was his diploma;
+like Prince Gremin in one English version of Chaykovsky's opera:
+     Set in Intertype Lectura
+     Set in Intertype Lectura
+     Penguin Books, 625 Madison Avenue, New York, New York 10022, U.S.A.
+     Penguin Books, 625 Madison Avenue, New York, New York 10022, U.S.A.
+inevitable  loss in verbal  exactness,  a  rhyming  version  can  aim  at  a
+L3R IB4
+L3R IB4
+     and telling trochee from iambic
+     He was without that dithyrambic
+     themes popular or idealistic,
+     from threads both sad and humoristic,
+     of entertaining the half-dead:
+     one smoothes the pillows down in bed,
+     This translation first published 1977
+     This translation first published 1977
+     His hair was fashionably curled,
+     reader, or where you've shone and glittered!
+     Onegin, my good friend, was littered
+     far, far from Italy, his adored.
+     deep in Moldavia the abhorred,
+     Unforced, as conversation passed,
+     his bow was wholly unaffected.
+     In French Onegin had perfected
+     All rights reserved
+     All rights reserved
+     stumblingly call to mind he did
+     two verses of the Aeneid.
+his original. If he attempts to follow suit, he must  do all he can to avoid
+     from her Monsieur took on the child.
+     He was sweet-natured, and yet wild.
+     and now at last he saw the World.
+of  Pushkin's  work  which   can  at  least  be   read  with   pleasure  and
+than  forty  years  after  Pushkin's  death,  is by  Chaykovsky  himself and
+interest  and  support,  and  Sir  John  Balfour,  for  his   searching  and
+     Penguin Books (N.Z.) Ltd, 182-190 Wairau Road, Auckland 10, New Zealand
+     Penguin Books (N.Z.) Ltd, 182-190 Wairau Road, Auckland 10, New Zealand
+     Penguin Books Ltd, Hannondsworth, Middlesex, England
+     Penguin Books Ltd, Hannondsworth, Middlesex, England
+     and took a mortgage on his land.
+     His father failed to understand
+     was quite beyond his wit, we found.
+     frenzy which wrecks our lives for sound,
+     which Ovid sang, for which the bard,
+     condemned to a lifetime of hard,
+     Made  and  printed  in Great  Britain  by  Hazell Watson &  Viney  Ltd,
+     Made  and  printed  in Great  Britain  by  Hazell Watson &  Viney  Ltd,
+the whole performance.
+the whole performance.
+     Evgeny's total store of knowledge
+     where he was master of his college,
+epigrams, the snap of his  final couplets. None of these effects can  emerge
+epigrams, the snap of his  final couplets. None of these effects can  emerge
+     Secondly, he must be on his guard against the ludicrous effect that the
+from  a  purely  literal  unrhymed  translation.  In  fact,  to  offset  the
+from  a  purely  literal  unrhymed  translation.  In  fact,  to  offset  the
+     with this the hero of my tale:
+     of jealousy, to seem to tremble
+     How early he'd learnt to dissemble,
+     But God, how deadly dull to sample
+     Let others learn from his example!
+     and glumly serves the medicine bottle,
+     And the sly baseness, fit to throttle,
+     In languid silence, or the flame
+     of eloquence, and just the same
+     felicitously every theme,
+     of listening like a judge-supreme
+     that stretched from Romulus in his prime
+     across the years to our own time.
+however certainly strive  for something else. It can attempt to produce some
+however certainly strive  for something else. It can attempt to produce some
+     of powers unripe, or on the wane,
+Chapter One
+French and other foreign words, but of  slang and of  audacious Byronic-type
+     Monsieur l'Abbé, the mediocre,
+actions, suite d'un sentiment de supériorité peut-être imaginaire.
+        (Tiré d'une lettre particulière)
+     (The libretto of the opera, which was  written and first performed more
+     or, with an epigram-surprise,
+Pushkin's text, but in fact the relationship is not very close.)
+     proficiency to speak and write,
+Translator's note
+Translator's note
+     Translator's Note 29
+     Translator's Note 29
+     promptly had nothing left to give.
+     had only debts on which to live.
+qwe1231
+     yet, truthfully and not in chaff,
+compulsive  grip of the novel; the tremendous gusto and swing and panache of
+compulsive  grip of the novel; the tremendous gusto and swing and panache of
+     The brio of the Russian text partly depends on a lavish use not only of
+published and without a  similar condition including  this  condition  being
+published and without a  similar condition including  this  condition  being
+the  psychological  insight,  the  devious  narrative  skill, the thrilling,
+the  psychological  insight,  the  devious  narrative  skill, the thrilling,
+     it's easy, without too much fooling,
+     We all meandered through our schooling
+derided by Nabokov) can all too easily produce in English. He must not sing,
+rhymes.  If  the  translator produces nothing comparable, he is emasculating
+     he had the talent of saluting
+     while serious topics were disputing,
+poetic novel from the English-reading world.  There  is  a whole magic which
+poetic novel from the English-reading world.  There  is  a whole magic which
+the pitfalls of the embarrassing, the facetious and the arch. {29}
+feminine  ending (for instance the pleasure/measure rhyme, which is so  much
+     and sighs, and asks oneself all through:
+     the meaning of an epigraph,
+     Apart from the overall  difficulty of  his  task, the  translator  with
+     There once I too strolled back and forth:
+     but I'm allergic to the North...1
+     Pétri de  vanité,  il  avait encore plus de cette espèce  d'orgueil qui
+        C. H. J.
+     and never played a shrewder trick.
+     but when past joking he fell sick,
+     where you were born as well, I think,
+     and bred upon the Neva's brink,
+     a mild rebuke was his worst mark,
+     and then a stroll in Letny Park.
+faintly, the impact of the original.
+     Anyway, it should  be possible now, with  the help of Nabokov's literal
+     let me acquaint you on the nail
+     I have no leisure to recall;
+     the art he'd studied best of all,
+goes by default: the  touching lyrical  beauty, the cynical wit of the poem;
+goes by default: the  touching lyrical  beauty, the cynical wit of the poem;
+     he really forced one to admire him --
+     ``My uncle -- high ideals inspire him;
+     Few foreign masterpieces can have suffered more than Eugene Onegin from
+     Few foreign masterpieces can have suffered more than Eugene Onegin from
+irrefutably,  that  no rhyming  version  can  be literally  accurate. It can
+irrefutably,  that  no rhyming  version  can  be literally  accurate. It can
+        Did I not love the Little Woman.''
+        ``I wouldn't be remotely human
+     and records of a heart in pain.
+     Eugene Onegin 35
+     Eugene Onegin 35
+Konstantin Shilovsky, a minor  poet of the time.  It  is  nominally based on
+     of hope and gloom, romantic-fashion,
+     ended his wild career of fashion
+translation and commentary, to produce a reasonably accurate rhyming version
+     But when the hour of youthful passion
+     this was the science of that passion
+     worthier of you in the perfection
+     in simple but sublime reflection,
+     He lacked the slightest predilection
+     But, as it is, this pied collection
+     but groomed an anecdote-collection
+edition of Eugene Onegin (London, 1964. Revised edition, 1976).
+     Fate saved Evgeny from perdition:
+     at first Madame gave him tuition,
+  Translation by Charles H. Johnston.
+   Translation by Charles H. Johnston.
+     Copyright © Charles Johnston, 1977, 1979
+     Copyright  Charles Johnston, 1977, 1979
+     products of carefree hours, of fun,
+     begs your indulgence -- it's been spun
+entertainment, and which,  ideally,  might even be able to stand on  its own
+     or pine, persuade of yes or no,
+     Except in  the United  States of America, this book is sold  subject to
+     Except in  the United  States of America, this book is sold  subject to
+ambitions of this  type will find  that Pushkin's work presents him with two
+     After a fine career, his father
+     He gave three balls a year, and rather
+completely  dead.  It  can try to convey the poet's tone  of voice,  whether
+completely  dead.  It  can try to convey the poet's tone  of voice,  whether
+     No moralizing from this joker;
+     without preliminary feeler
+     He cursed Theocritus and Homer,
+imposed on the subsequent purchaser
+imposed on the subsequent purchaser
+     Eugene was free, and as a dresser
+     1 Notes are at end of each chapter.
+     1 Notes are at end of each chapter.
+     make Juvenal his text, or better
+     add vale when he signed a letter;
+different sort of accuracy, an equivalence or parallelism conveying, however
+constructive criticism of the  translation;  to  Professor  Gleb Struve, for
+     Acknowledgements are  due  to  Messrs. Routledge  and  Kegan  Paul  for
+re-sold,  hired out, or  otherwise circulated without the  publisher's prior
+re-sold,  hired out, or  otherwise circulated without the  publisher's prior
+     made London's dandy his professor.
+     it was goodbye, Monsieur.
+     Now Latin's gone quite out of favour;
+     Onegin knew enough to savour
+     Published with minor  revisions and an Introduction in Penguin Classics
+     Published with minor  revisions and an Introduction in Penguin Classics
+     I prize the attention of my friends,
+     could have been turned to worthier ends --
+fait  avouer avec  la  même  indifférence  les  bonnes  comme  les mauvaises
+     Notes1 234
+     Notes1 234
+          To live, it hurries, and to feel it hastes.
+that  in  losing  its  rhyme   the  work  loses  its  ``bloom''  he  argues,
+that  in  losing  its  rhyme   the  work  loses  its  ``bloom''  he  argues,
+     of kindling smiles in ladies' eyes.
+permission to quote from Vladimir Nabokov's notes in volumes 2 and 3 of  his
+world-weary  or romantic, the sparkle  of  his jokes,  the  flavour  of  his
+world-weary  or romantic, the sparkle  of  his jokes,  the  flavour  of  his
+     I  am much  indebted  to  my  friends Sir Sacheverell Sitwell, for  his
+substitute for  the ``bloom'' of  the original, without  which the  work  is
+substitute for  the ``bloom'' of  the original, without  which the  work  is
+consent in any form  of  binding  or  cover other than that  in which it  is
+consent in any form  of  binding  or  cover other than that  in which it  is
+Aylesbury, Bucks
+Aylesbury, Bucks
+     haphazard; so, to God be thanks,
+     to pass for cultured in our ranks.
+     in limpid verse that lives and gleams.
+     your soul displays, in holy dreams,
+particular problems.
+the literal meaning.  It is  as if  a  sound-proof wall separated  Pushkin's
+the literal meaning.  It is  as if  a  sound-proof wall separated  Pushkin's
+     the legatee of his relations --
+     of reason's icy intimations,
+     of sleeplessness, faint inspirations,
+     Such were a young rake's meditations --
+     what occupied his chafing powers
+     throughout the boredom of the hours --
+meaning, but explicitly disclaims any further ambition. While Nabokov admits
+meaning, but explicitly disclaims any further ambition. While Nabokov admits
+Contents
+Contents
+     and act the humble or imperious,
+     the indifferent, or the deadly serious!
+     The World found this enough to treat
+     the gift of recognizing what
+     Vladimir Nabokov's rendering into unrhymed iambics reproduces the exact
+     Vladimir Nabokov's rendering into unrhymed iambics reproduces the exact
+     Eugene as clever, and quite sweet.
+     in the mazurka he was light,
+generously  giving me the benefit of his unrivalled scholarship and insight;
+     of simple product supplements it.
+     a nation's wealth is, what augments it,
+the condition that it  shall not,  by way of trade or  otherwise,  be  lent,
+the condition that it  shall not,  by way of trade or  otherwise,  be  lent,
+above all, to my wife Natasha, for her loving encouragement.
+     Heedless of the proud world's enjoyment,
+     its work, its torture, its enjoyment,
+     his young heyday's supreme employment,
+     and only wish that my employment
+     our deep economist had got
+     as well-read, though of pedant cast.
+the English  translator's failure to convey anything more than -- at best --
+the English  translator's failure to convey anything more than -- at best --
+     for raking up historic dust
+     as horses whirled him through the dust.
+     by will of Zeus, the high and just,
+     or stirring annalistic must;
+feet as English. That, in all humility, is the aim of the present text.
+     "When will the devil come for you?"''
+          To Peter Alexandrovich Pletnev
+     to hide a hope, to make a show
+13r13r1qw
+     sickroom attendance night and day
+     struck for Evgeny, with its play
+     and never stir a foot away!
+     Introduction copyright © John Bayley, 1979
+     Introduction copyright  John Bayley, 1979
+     Introduction by John Bayley 9
+     Introduction by John Bayley 9
+     and how a country lives, and why
+           Prince Vyazemsky
+     it needs no gold if a supply
+     Onegin was assessed by many
+     (critical judges, strict as any)
+     reluctant to exhaust the boy,
+     treated his lessons as a ploy.
+xxxzzzzz
+zzzzzzzzzzz
+
